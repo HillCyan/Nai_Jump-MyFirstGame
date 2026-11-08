@@ -9,9 +9,6 @@
 /[Mm]emoryCaptures/
 /[Rr]ecordings/
 
-# ===== 构建产物（可执行包）=====
-/Nai_Jump/
-
 # ===== IDE / 编辑器缓存 =====
 .vs/
 .idea/
