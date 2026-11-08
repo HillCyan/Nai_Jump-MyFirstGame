@@ -126,9 +126,31 @@ Assets/
     └── SampleScene.scene
 ```
 
+项目根目录：
+
+```
+FirstTry2DGame/
+├── Assets/          游戏资源与脚本（见上）
+├── Packages/        包依赖
+├── ProjectSettings/ 工程设置
+├── Nai_Jump/        打包好的 Windows 成品（奶jump.exe）
+└── README.md        本文档
+```
+
 ---
 
 ## 运行方式
+
+### 方式一：直接运行成品（Windows，无需引擎）
+
+仓库里的 `Nai_Jump/` 就是打包好的可执行版本：
+
+1. 进入 `Nai_Jump/` 目录；
+2. 双击 **`奶jump.exe`** 即可开始游戏。
+
+> `Nai_Jump/` 整个文件夹（约 96 MB）要一起保留——exe 依赖同目录下的 `奶jump_Data/`、`TuanjiePlayer.dll`、`MonoBleedingEdge/` 等文件，**只拷 exe 是打不开的**。
+
+### 方式二：用引擎打开工程
 
 1. 用团结引擎 / Unity 2022.3 打开项目；
 2. 打开 `Assets/Scenes/SampleScene.scene`；
@@ -149,5 +171,6 @@ Assets/
 
 ## 说明
 
+- 仓库同时包含**源码**（`Assets/` + `ProjectSettings/`）和**可执行成品**（`Nai_Jump/`）。
 - `Library/`、`Temp/`、`Logs/` 等是引擎生成的缓存目录，提交到 GitHub 时可以忽略。
 - 游戏内使用的图片素材位于 `Assets/Images/`。
